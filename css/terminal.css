@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+.terminal-header {
+    height: 32px;
+    background-color: #3a3a3b;
+    border: 2px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 9px;
+}
+
+.red {
+    background-color: #f96256;
+    border: solid 1px #f65549;
+}
+
+.yellow {
+    background-color: #fdbc3d;
+    border: solid 1px #ffb524;
+}
+
+.green {
+    background-color: #33c948;
+    border: solid 1px #2dbb41;
+}
+
+.terminal-tabs-container {
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.terminal-tabs {
+    width: 100%;
+    color: #7c7c7c;
+    font-size: 1.15em;
+    background-color: #1d1d1d;
+    border-top: 1px solid #535354;
+}
+
+.terminal-tabs:focus {
+    outline: 0;
+}
+
+.terminal-tabs:active {
+    border-style: outset;
+}
+
+.terminal-tabs:hover {
+    background-color: #262626;
+}
+
+.terminal-tabs.active {
+    border-style: outset;
+    border-top: 1px solid #535354;
+    color: white;
+    background-color: #3a3a3b;
+}
+
+.terminal-tabs.active:hover {
+    border-style: outset;
+    border-top: 1px solid #535354;
+    color: white;
+    background-color: #3a3a3b;
+}
+
+.terminal-window {
+    min-height: 700px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 0 0 8px 8px;
+    padding: 35px 35px 35px 35px;
+}
+
+@media only screen and (min-width: 600px) {
+    .terminal-window {
+        min-height: 500px;
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 0 0 8px 8px;
+        padding: 35px 35px 35px 35px;
+    }   
+}
+
+.terminal-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.15em;
+    color: white;
+    padding: 5px 0 5px 0;
+}
+
+.terminal-subtext {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.15em;
+    color: #FF9979;
+    padding: 5px 0 5px 0;
+}
+
+.text-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.15em;
+    color: white;
+}
+
+.text-subtext {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.15em;
+    color: #FF9979;
+}
+
+.text-hyperlink {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.15em;
+    text-decoration: underline;
+    color: #5691E9;
+}
